@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GEIMS</string>
+    <string name="open">Open Navigation</string>
+    <string name="close">Close Navigation_2</string>
+    <string name="logout">Logout</string>
+    <string name="patient_details">Patient Details</string>
+    <string name="protocol_2">Protocol 2</string>
+</resources>

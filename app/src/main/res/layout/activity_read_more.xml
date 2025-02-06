@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".read_more">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/tvF"
+                android:textColor="@color/black"
+
+                android:textStyle="bold"
+                android:text="President\n
+            Prof. (Dr.) Kamal Ghanshala\n
+            Ph.D. Computer Science\n
+            Founder – Graphic Era Group\n\n
+            "
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv"
+                android:textColor="@color/black"
+                android:text="“A Visionary who dreamt and realized his dreams”\n\nMessage from the Desk of President, Prof. (Dr) Kamal Ghanshala\n\nToday colleges and universities are facing changing student demographics, issues of quality and value, and increased competition. Their success requires transformative change to enable new teaching and learning approaches. As higher education is rapidly evolving, Graphic Era is at the cutting edge of the movement. We are competing boldly and taking new paths—yet staying grounded in our mission of delivering quality education, building teaching excellence, introducing innovative study programs, customizing and updating our course content to match the industry requirements, setting records in placement, research, and consultancy.\n\n
+            A creative and inventive culture, nurtured by our faculty, students, and staff, is transforming how we train our students and help them to strengthen their future prospects. In developing Graphic Era University, we have partnered with leaders in the corporate sector and research organizations of the country and international universities, for training and placements of our students. We are leveraging these creative partnerships to stretch our boundaries of excellence collaboration, innovation, and the creation of skills, across numerous disciplinary fronts. The deep integration of technology in learning has made learning mobile and self-directed. The ultimate goal of learning is critical thinking, generating work skills, communication, creativity, collaboration, character, education, and citizenship, and technology is assisting in a big way in accelerating these ideals and making learning irresistibly engaging. With recognition from prestigious institutions, Graphic Era University is setting new benchmarks in education."
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:backgroundTint="#FFC107"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
