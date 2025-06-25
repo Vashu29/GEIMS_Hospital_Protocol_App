@@ -18,56 +18,23 @@
         android:layout_marginStart="18dp"
         android:textSize="24dp"
         android:layout_marginTop="20dp"/>
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Name"
-        android:textSize="24dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/texttitle"
-        android:inputType="textPersonName"/>
-    <EditText
-        android:id="@+id/contact"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Contact"
-        android:textSize="24dp"
-        android:layout_below="@+id/name"
-        android:inputType="number"/>
-    <EditText
-        android:id="@+id/dob"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Date of Birth"
-        android:textSize="24dp"
-        android:layout_below="@+id/contact"
-        android:inputType="number"/>
 
-    <Button
-        android:id="@+id/btnUpdate"
+    <ImageView
+        android:id="@+id/img"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1536DE"
-        android:layout_marginTop="100dp"
-        android:text="Update Data"
-        android:textSize="24dp"
-        android:layout_below="@+id/dob"/>
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#1536DE"
-        android:text="Delete Data"
-        android:textSize="24dp"
-        android:layout_below="@+id/btnUpdate"/>
+        android:layout_below="@+id/texttitle"
+        android:src="@drawable/imgh"
+        />
     <Button
         android:id="@+id/btnView"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#1536DE"
         android:text="Read Data"
-        android:textSize="24dp"
-        android:layout_below="@+id/btnDelete"/>
+        android:textSize="18dp"
+        android:layout_below="@+id/img"/>
 
 </RelativeLayout>

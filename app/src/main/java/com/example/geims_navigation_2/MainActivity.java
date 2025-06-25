@@ -78,18 +78,21 @@ public class MainActivity extends AppCompatActivity {
                     Intent i = new Intent(MainActivity.this, video.class);
                     startActivity(i);
                 }
-                else if (id == R.id.saved) {
-                    Intent i = new Intent(MainActivity.this, Protocol_Done_Patient.class);
-                    startActivity(i);
-                }
+
                 else if (id == R.id.createAcc) {
                     Toast.makeText(MainActivity.this, "Create Account Selected", Toast.LENGTH_SHORT).show();
+                    Intent i = new Intent(MainActivity.this, Register.class);
+                    startActivity(i);
                 } else if (id == R.id.login) {
-                    Intent i = new Intent(MainActivity.this, login.class);
+                    Intent i = new Intent(MainActivity.this, Login_2.class);
                     startActivity(i);
                 } /*else if (id == R.id.logout) {
                     Toast.makeText(MainActivity.this, "Logout Selected", Toast.LENGTH_SHORT).show();
                 }*/
+                else if (id == R.id.notes) {
+                    Intent i = new Intent(MainActivity.this, Notepad.class);
+                    startActivity(i);
+                }
                 else if (id == R.id.contact) {
                     Toast.makeText(MainActivity.this, "Contact Selected", Toast.LENGTH_SHORT).show();
                 } else if (id == R.id.share) {

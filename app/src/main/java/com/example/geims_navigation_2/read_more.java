@@ -31,7 +31,7 @@ public class read_more extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(read_more.this, login.class);
+                Intent i = new Intent(read_more.this, Login_2.class);
                 startActivity(i);
             }
         });

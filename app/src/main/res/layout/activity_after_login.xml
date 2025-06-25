@@ -13,19 +13,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="22sp"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
         android:text="Proceed To Protocols"
+        />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imgh2"
+        android:layout_centerInParent="true"
         />
     <Button
         android:id="@+id/btn"
-        android:layout_below="@+id/tv"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/img"
         android:text="Click"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:textColor="@color/black"
         android:backgroundTint="#FFC107"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="#00BCD4"
+        android:layout_alignParentRight="true"
+        />
+    <Button
+        android:id="@+id/btn3"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protocol Done"
+        android:layout_marginLeft="15dp"
+        android:backgroundTint="#00BCD4"
+        android:layout_alignParentLeft="true"
         />
 
 </RelativeLayout>

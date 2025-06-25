@@ -23,14 +23,12 @@ public class Protocol_Done_Patient extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_protocol_done_patient);
 
-        name = findViewById(R.id.name);
-        contact = findViewById(R.id.contact);
-        dob = findViewById(R.id.dob);
-        update = findViewById(R.id.btnUpdate);
-        delete = findViewById(R.id.btnDelete);
+        //update = findViewById(R.id.btnUpdate);
+        //delete = findViewById(R.id.btnDelete);
         view = findViewById(R.id.btnView);
         DB = new DBHelper(this);
 
+        /*
         update.setOnClickListener(view -> {
             String nameTXT = name.getText().toString();
             String contactTXT = contact.getText().toString();
@@ -50,7 +48,7 @@ public class Protocol_Done_Patient extends AppCompatActivity {
                 Toast.makeText(Protocol_Done_Patient.this, "Entry Deleted", Toast.LENGTH_SHORT).show();
             else
                 Toast.makeText(Protocol_Done_Patient.this, "Entry Not Deleted", Toast.LENGTH_SHORT).show();
-        });
+        });*/
 
         view.setOnClickListener(view -> {
             Cursor res = DB.getdata();
@@ -60,8 +58,8 @@ public class Protocol_Done_Patient extends AppCompatActivity {
             }
             StringBuilder buffer = new StringBuilder();
             while (res.moveToNext()) {
-                buffer.append("Contact :").append(res.getString(0)).append("\n");
-                buffer.append("Name :").append(res.getString(1)).append("\n");
+                buffer.append("Name :").append(res.getString(0)).append("\n");
+                buffer.append("Contact :").append(res.getString(1)).append("\n");
                 buffer.append("Date of Birth :").append(res.getString(2)).append("\n\n");
             }
 

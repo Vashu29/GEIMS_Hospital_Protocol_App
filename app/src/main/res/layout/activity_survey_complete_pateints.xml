@@ -16,6 +16,7 @@
 
         <Button
             android:id="@+id/btnBack"
+            android:layout_marginStart="17dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="#FFC107"
@@ -23,7 +24,8 @@
             android:text="Back to Protocol"/>
         <Button
             android:id="@+id/btnLogout"
-            android:layout_marginStart="60dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="17dp"
             android:backgroundTint="#FFC107"
             android:textColor="@color/black"
             android:layout_width="wrap_content"
@@ -43,62 +45,91 @@
         android:layout_marginTop="20dp"/>
     <EditText
         android:id="@+id/name"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Name"
-        android:textSize="24dp"
+        android:textSize="17dp"
         android:layout_marginTop="40dp"
         android:layout_below="@+id/texttitle"
         android:inputType="textPersonName"/>
     <EditText
         android:id="@+id/contact"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Contact"
-        android:textSize="24dp"
+        android:hint="Contact (10-12 no:)"
+        android:textSize="17dp"
         android:layout_below="@+id/name"
         android:inputType="number"/>
+
     <EditText
         android:id="@+id/dob"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Date of Birth"
-        android:textSize="24dp"
         android:layout_below="@+id/contact"
-        android:inputType="number"/>
+        android:layout_marginTop="0dp"
+        android:hint="Date of Birth (DDMMYYYY)"
+        android:inputType="date"
+        android:textSize="17dp" />
+
     <Button
         android:id="@+id/btnInsert"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-        android:backgroundTint="#1536DE"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="#05CFE9"
         android:text="Insert New Data"
-        android:textSize="24dp"
+        android:textSize="18dp"
         android:layout_below="@+id/dob"/>
     <Button
         android:id="@+id/btnUpdate"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1536DE"
+        android:backgroundTint="#05CFE9"
         android:text="Update Data"
-        android:textSize="24dp"
+        android:textSize="18dp"
         android:layout_below="@+id/btnInsert"/>
     <Button
         android:id="@+id/btnDelete"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1536DE"
+        android:backgroundTint="#05CFE9"
         android:text="Delete Data"
-        android:textSize="24dp"
+        android:textSize="18dp"
         android:layout_below="@+id/btnUpdate"/>
     <Button
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
         android:id="@+id/btnView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#1536DE"
+        android:backgroundTint="#05CFE9"
         android:text="Read Data"
-        android:textSize="24dp"
+        android:textSize="18dp"
         android:layout_below="@+id/btnDelete"/>
+    <Button
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="13dp"
+        android:id="@+id/btnDownloadCSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#28A745"
+        android:text="Download CSV"
+        android:textSize="19dp"
+        android:layout_below="@+id/btnView"/>
+
 
 
 </RelativeLayout>

@@ -30,10 +30,11 @@
                     android:icon="@drawable/baseline_login_24"
                     android:title="Login"
                     />
-                <item android:id="@+id/saved"
-                    android:icon="@drawable/baseline_saved_search_24"
-                    android:title="Protocol Done Patient"
+                <item android:id="@+id/notes"
+                    android:icon="@drawable/baseline_notes_24"
+                    android:title="Notepad"
                     />
+
             </group>
         </menu>
     </item>

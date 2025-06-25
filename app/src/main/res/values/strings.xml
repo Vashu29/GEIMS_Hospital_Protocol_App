@@ -5,4 +5,13 @@
     <string name="logout">Logout</string>
     <string name="patient_details">Patient Details</string>
     <string name="protocol_2">Protocol 2</string>
+    <string name="schedule_appointment_n_with_ease">Schedule Appointment\n with Ease</string>
+    <string name="how_are_you_today">How Are You Today?</string>
+    <string name="hi_mohsen_jack">Hi, Mohsen Jack</string>
+
+    <string name="hint_WT">Enter your Weight</string>
+    <string name="hint_htF">Enter your Height(in Ft)</string>
+    <string name="hint_htI">Enter your Height(in In)</string>
+    <string name="CALCULATE_BMI">CALCULATE BMI</string>
+    <string name="Result">Result</string>
 </resources>

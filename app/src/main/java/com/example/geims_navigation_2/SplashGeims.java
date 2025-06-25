@@ -15,7 +15,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class SplashGeims extends AppCompatActivity {
-    ImageView im, im2;
+    ImageView im, im2, im3, star;
     TextView tv;
 
     @Override
@@ -25,13 +25,17 @@ public class SplashGeims extends AppCompatActivity {
 
         im = findViewById(R.id.im);
         im2 = findViewById(R.id.im2);
+        star = findViewById(R.id.star);
+        //im3 = findViewById(R.id.im3);
         tv = findViewById(R.id.tv);
 
         Animation scale = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.scale);
         tv.startAnimation(scale);
+        star.startAnimation(scale);
 
         im.setImageResource(R.drawable.geu);
         im2.setImageResource(R.drawable.geims);
+        //im3.setImageResource(R.drawable.geims);
         Intent iHome = new Intent(SplashGeims.this,MainActivity.class);
         new Handler().postDelayed(new Runnable() {
             @Override

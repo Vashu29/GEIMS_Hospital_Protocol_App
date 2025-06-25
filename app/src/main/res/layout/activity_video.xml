@@ -13,10 +13,18 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true">
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/videoCard"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp">
         <VideoView
             android:id="@+id/video"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
+        </androidx.cardview.widget.CardView>
 
     </FrameLayout>
 

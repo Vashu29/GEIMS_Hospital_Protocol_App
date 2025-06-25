@@ -3,7 +3,20 @@
     <style name="Base.Theme.GEIMS_Navigation_2" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
     </style>
 
     <style name="Theme.GEIMS_Navigation_2" parent="Base.Theme.GEIMS_Navigation_2" />
+
+    <style name="cornorImgae" parent="">
+        <item name="cornerSize">16dp</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+    
+    <style name="fullCornerImage">
+        <item name="cornerSize">50%</item>
+        <item name="cornerFamily">rounded</item>
+    </style>
+
 </resources>

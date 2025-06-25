@@ -6,6 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import org.w3c.dom.Text;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 public class DBHelper extends SQLiteOpenHelper {
     public DBHelper(Context context) {
         super(context, "Userdata.db", null, 1);
@@ -14,7 +19,7 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase DB) {
         // Updated primary key from 'name' to 'contact'
-        DB.execSQL("CREATE TABLE Userdetails(contact TEXT PRIMARY KEY, name TEXT, dob TEXT)");
+        DB.execSQL("CREATE TABLE Userdetails(name TEXT,contact TEXT PRIMARY KEY, dob TEXT)");
     }
 
     @Override
@@ -29,6 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("name", name);
         contentValues.put("contact", contact);
         contentValues.put("dob", dob);
+        //contentValues.put("insert_time", System.currentTimeMillis()/1000);
         long result = DB.insert("Userdetails", null, contentValues);
         return result != -1;
     }
@@ -38,6 +44,7 @@ public class DBHelper extends SQLiteOpenHelper {
         ContentValues contentValues = new ContentValues();
         contentValues.put("name", name);
         contentValues.put("dob", dob);
+        //contentValues.put("update_time", System.currentTimeMillis()/1000);
         Cursor cursor = DB.rawQuery("SELECT * FROM Userdetails WHERE contact = ?", new String[]{contact});
         if (cursor.getCount() > 0) {
             long result = DB.update("Userdetails", contentValues, "contact=?", new String[]{contact});
